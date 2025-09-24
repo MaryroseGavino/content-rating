@@ -27,7 +27,14 @@ class ContentRating extends Component {
           the day you find out why.
         </p>
         <strong>- Mark Twain</strong>
-        
+        <div className="rating-button">
+          <button className="like-button" onClick={this.state.handleLikes}>
+            Like ({this.state.likes})
+          </button>
+          <button className="like-button" onClick={this.state.handleDislike}>
+            Dislike ({this.state.dislikes})
+          </button>
+        </div>
       </div>
     );
   }
